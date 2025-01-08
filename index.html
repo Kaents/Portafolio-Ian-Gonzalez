@@ -2,24 +2,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaents</title>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<header>
-    <h1>Bienvenmido.</h1>
-    <p>Mi nombre es Ian González, alias en internet como Kaents, soy alguien que se aventuro en el mundo de la informatica, actualmente me estoy especializando en la Administración de Servidores, con proyección a especializarme en IA y crear videojuegos tanto propios como siendo parte de un equipo de desarrollo.</p>
-</header>
 <body>
-    <div id="imagens">
-        <h1>Mis proyectos</h1>
-    </div>
-    <div id="proyects">
-        <h2>Web Peluche</h2>
-        <h2>Practica Clase Mokepon</h2>
-        <h2>New Game Personal</h2>
-    </div>
+    <header>
+        <div class="logo">
+
+        </div>
+        <nav class="menu">
+            <button onclick="scrollToSection('about')">Sobre mí</button>
+            <button onclick="scrollToSection('experince')">Mi Experiencia</button>
+            <button onclick="scrollToSection('projjects')">Proyectos</button>
+        </nav>
+    </header>
+    <main>
+        <search id="about">
+            <h1>
+            </h1>
+            <p></p>
+        </search>
+        <section id="experince">
+            <h1></h1>
+            <p></p>
+        </section>
+        <section id="projects">
+            <h1></h1>
+            <p></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+                <img src="icons/whatsapp.png" alt="WhatsApp" />
+            </a>
+            <a href="https://github.com/tuusuario" target="_blank" title="GitHub">
+                <img src="icons/github.png" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/tuusuario/" target="_blank" title="LinkedIn">
+                <img src="icons/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="mailto:tuemail@dominio.com" title="Correo Electrónico">
+                <img src="icons/email.png" alt="Correo Electrónico" />
+            </a>
+        </div>
+        <p>&copy; 2025 - Kaents</p>
+    </footer>
 </body>
-<footer>
-    <p>git</p>
-    <p>contact</p>
-</footer>
+<script src="./javascript/script.js" defer></script>
 </html>
