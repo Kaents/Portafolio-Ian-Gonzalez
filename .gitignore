@@ -1,0 +1,4 @@
+#Ignora las iamgenes exepto de la carpeta 'icons'
+*.png
+*.jpg
+*.jpeg

@@ -2,48 +2,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>CV Ian González</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
-
+            <h2>Ian González Osses</h2>
+            <p>Kaents</p>
         </div>
         <nav class="menu">
             <button onclick="scrollToSection('about')">Sobre mí</button>
-            <button onclick="scrollToSection('experince')">Mi Experiencia</button>
-            <button onclick="scrollToSection('projjects')">Proyectos</button>
+            <!--<button onclick="scrollToSection('experince')">Experiencia</button>-->
+            <button onclick="scrollToSection('projects')">Proyectos</button>
+            <button onclick="scrollToSection('education')">Educación</button>
+            <button onclick="scrollToSection('skills')">Habilidades</button>
+            <button onclick="scrollToSection('contact')">Contacto</button>
         </nav>
     </header>
     <main>
         <search id="about">
-            <h1>
-            </h1>
-            <p></p>
+            <h1>Hola soy Ian González Osses</h1>
+            <p>Fui estudiante del Instituto Profesional de San Sebastian de la carrera de Tecnico en analisis y programacón de sistemas y continuo mis estudios en el sistio web Platzi.
+                En mi periodo de formacion pude embarcarme en la adquisicion de conocimientos fundamentales en el desarrollo de software, y en la programcion de
+                de diferentes tipos de sistemas como servidores, base de datos, entre otros lo que me permitio participar y crear proyectos academos y personales.
+                Soy responsable con mis tareas asignadas y me gusta aprender nuevas materias para lograr una especializacion solida como tambien experimentar nuevos
+                desafios, desde aplicaciones web hasta incluso videojuegos en un futuro.
+            </p>
         </search>
-        <section id="experince">
-            <h1></h1>
+        <!--<section id="experince">
+            <h1>Experiencia</h1>
             <p></p>
-        </section>
+        </section>-->
         <section id="projects">
-            <h1></h1>
-            <p></p>
+            <h2>Proyectos</h2>
+            <div id="project-container">
+            </div>
+            <!-- Navegación de proyectos -->
+            <!--
+            <div class="project-navigation">
+                <button onclick="previousProject()">&#9664; Proyecto Anterior</button>
+                <button onclick="nextProject()">Proyecto Siguiente &#9654;</button>
+            </div>
+            -->
+        </section>
+        <section id="education">
+            <h2>Educación</h2>
+            <div class="education-segment">
+                <h3>Instituto Profesional de San Sebastian</h3>
+                <p><strong>Carrera:</strong> Técnico en análisis y programación de sistemas</p>
+                <p>Estudié Técnico en análisis y programación de sistemas, donde adquirí conocimientos fundamentales en el desarrollo de software y la programación de diferentes tipos de sistemas como servidores y bases de datos.
+                    <br>Fue donde aprendi el usu de destintos lenguajes de programacion como del uso de Linux, desarrollo web y desarrollo movil.
+                </p>
+            </div>
+            <div class="education-segment">
+                <h3>Platzi</h3>
+                <p><strong>Cursos:</strong> Administración Sevidores Linux</p>
+                <p>En el curso adquiri diveresas habilidades y conocimientos para la administracion correcta de los servidores, desde la puesta en marcha del servidor, creacion de usuarios hasta la subida de archivos a dominios webs.</p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skill-segment">
+                <h3>Administrador de Servidores</h3>
+                <p>Los Servidores son algo fundamental en la actualidad por lo que tener el conocimiento de su uso y manejo pueden facilitar mucho las tareas para una conexion directa entre productos y clientes.
+                    <br>Gracias a que me adentre a este apartado del desarrollo de software me facilito mucho a la hora de saber subir diferentes proyectos a algun dominio y mi objetivo es tener la capacidad de aplicar todo lo aprendido en cada proyecto que requiera de algun servidor ya sea propio o externo.
+                </p>
+                <div class="skills-icons">
+                    <img src="./assets/icons/2333386-code-linux-os_85584.png" alt="Linux" title="Linux">
+                    <img src="./assets/icons/apache_logo_icon_145491.png" alt="Apache" title="Apache">
+                </div>
+            </div>
+            <div class="skill-segment">
+                <h3>Desarrollo Web</h3>
+                <p>Tengo experiencia en el desarrollo de diferentes aplicaciones web, las cuales se realizaron durante mi periodo de estudio, usando diferentes lenguajes de programacion desde HTML, CSS, JavaScript y PHP.
+                    <br>Las diferentes aplicaciones fueron desde paginas simples estaticas hasta aplicaciones dinamicas en la cual cambia cada que se agregue un nuevo elemento por algun usuario a la base de datos.
+                </p>
+                <div class="skills-icons">
+                    <img src="./assets/icons/2333390-html-html5-internet-website_85590.png" alt="HTML" title="HTML">
+                    <img src="./assets/icons/css3-02_icon-icons.com_50917.png" alt="CSS" title="CSS">
+                    <img src="./assets/icons/file_javascript_icon_161332.png" alt="JavaScript" title="JavaScript">
+                    <img src="./assets/icons/prog-php01_icon-icons.com_50777.png" alt="PHP" title="PHP">
+                </div>
+            </div>
+            <div class="skill-segment">
+                <h3>Herramientas</h3>
+                <p>Durante los desarrollos de mis proyectos me gusta realizar diferentes herramientas que me han gustado durante mi tiempo en el desarrollo software.
+                    <br>Desde Laravel que facilita el desarrollo de aplicaciones webs, xampp que permite un entorno local intuitivo de usar ademas de Git y GitHub para controlar las versiones de los proyectos.
+                </p>
+                <div class="skills-icons">
+                    <img src="./assets/icons/laravel_icon_135451.png" alt="Laravel" title="Laravel">
+                    <img src="./assets/icons/xampp_logo_icon_249151.png" alt="XAMPP" title="XAMPP">
+                    <img src="./assets/icons/vc-git_icon-icons.com_50729.png" alt="Git" title="Git">
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="social-links">
-            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
-                <img src="icons/whatsapp.png" alt="WhatsApp" />
+            <a href="https://github.com/Kaents" target="_blank" title="GitHub">
+                <img src="./assets/icons/github-logo_icon-icons.com_73546.png" alt="GitHub" />
             </a>
-            <a href="https://github.com/tuusuario" target="_blank" title="GitHub">
-                <img src="icons/github.png" alt="GitHub" />
-            </a>
-            <a href="https://www.linkedin.com/in/tuusuario/" target="_blank" title="LinkedIn">
-                <img src="icons/linkedin.png" alt="LinkedIn" />
+            <a href="https://www.linkedin.com/in/ian-gonzález-osses-65b21a18a/" target="_blank" title="LinkedIn">
+                <img src="./assets/icons/linked-in-square-button_icon-icons.com_68389.png" alt="LinkedIn" />
             </a>
             <a href="mailto:tuemail@dominio.com" title="Correo Electrónico">
-                <img src="icons/email.png" alt="Correo Electrónico" />
+                <img src="./assets/icons/mail_icon-icons.com_72317.png" alt="Correo Electrónico" />
             </a>
         </div>
         <p>&copy; 2025 - Kaents</p>
