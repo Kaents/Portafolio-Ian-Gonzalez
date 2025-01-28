@@ -9,6 +9,7 @@
 <body>
     <header>
         <div class="logo">
+            <!-- <img src="./images/personal-photo.jpg" alt="Personal Photo" class="circular"> -->
             <h2>Ian González Osses</h2>
             <p>Kaents</p>
         </div>
@@ -18,12 +19,12 @@
             <button onclick="scrollToSection('projects')">Proyectos</button>
             <button onclick="scrollToSection('education')">Educación</button>
             <button onclick="scrollToSection('skills')">Habilidades</button>
-            <button onclick="scrollToSection('contact')">Contacto</button>
+            <button onclick="scrollToFooter()">Contacto</button>
         </nav>
     </header>
     <main>
-        <search id="about">
-            <h1>Hola soy Ian González Osses</h1>
+        <search id="about" class="visible">
+            <h1>Hola soy Ian Francisco González Osses</h1>
             <p>Fui estudiante del Instituto Profesional de San Sebastian de la carrera de Tecnico en analisis y programacón de sistemas y continuo mis estudios en el sistio web Platzi.
                 En mi periodo de formacion pude embarcarme en la adquisicion de conocimientos fundamentales en el desarrollo de software, y en la programcion de
                 de diferentes tipos de sistemas como servidores, base de datos, entre otros lo que me permitio participar y crear proyectos academos y personales.
@@ -35,7 +36,7 @@
             <h1>Experiencia</h1>
             <p></p>
         </section>-->
-        <section id="projects">
+        <section id="projects" class="hidden">
             <h2>Proyectos</h2>
             <div id="project-container">
             </div>
@@ -47,7 +48,7 @@
             </div>
             -->
         </section>
-        <section id="education">
+        <section id="education" class="hidden">
             <h2>Educación</h2>
             <div class="education-segment">
                 <h3>Instituto Profesional de San Sebastian</h3>
@@ -62,7 +63,7 @@
                 <p>En el curso adquiri diveresas habilidades y conocimientos para la administracion correcta de los servidores, desde la puesta en marcha del servidor, creacion de usuarios hasta la subida de archivos a dominios webs.</p>
             </div>
         </section>
-        <section id="skills">
+        <section id="skills" class="hidden">
             <h2>Habilidades</h2>
             <div class="skill-segment">
                 <h3>Administrador de Servidores</h3>

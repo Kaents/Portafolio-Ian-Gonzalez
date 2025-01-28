@@ -1,9 +1,25 @@
 function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+    const sections = document.querySelectorAll('main > section, main > search');
+    sections.forEach(section => {
+        section.classList.add('hidden');
+        section.classList.remove('visible');
+    });
+
+    const targetSection = document.getElementById(id);
+    if (targetSection) {
+        targetSection.classList.add('visible');
+        targetSection.classList.remove('hidden');
+        targetSection.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+function scrollToFooter() {
+    const footer = document.getElementById('contact');
+    if (footer) {
+        footer.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
 // Función para inicializar proyectos
 function initializeProjects() {
     const projects = [
