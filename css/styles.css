@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url('../assets/imag/Lawrencium.jpg')
 }
 
 /* Cabecera */
@@ -12,8 +13,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #3F3F56;
     color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header .logo {
@@ -67,7 +70,7 @@ section, search {
 }
 
 section h1, search h1 {
-    color: #333;
+    color: #F0EFFF;
 }
 
 .hidden {
@@ -78,12 +81,78 @@ section h1, search h1 {
     display: block;
 }
 
+.education-columns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skills-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.skill-segment {
+    width: 45%;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.education-segment {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.column {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+#project-container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.project-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-navigation button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.project-navigation button:hover {
+    color: #666;
+}
+
 /* Pie de página */
 footer {
-    background-color: #333;
+    background-color: #3F3F56;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
 }
 
 footer .social-links img {
