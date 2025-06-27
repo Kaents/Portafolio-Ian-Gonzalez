@@ -39,4 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     mostrarSeccion('contact');
   });
+
+  // Forzar scroll al top al hacer click en los links del navbar
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
 });
+
+// Siempre iniciar desde arriba al recargar la página
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
